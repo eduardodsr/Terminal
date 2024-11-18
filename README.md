@@ -48,22 +48,54 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 
 | Atalho | Descrição |
 | ----------- | ----------- |
-| cd [pasta] | Altera o diretório |
 | cd | Vai ao diretório `home`|
-| cd / | Vai ao diretório raiz |
+| cd [pasta] | Altera o diretório |
+| cd / | Vai ao diretório raiz (root |
 | cd - | Volta ao diretório anterior |
-| ls | Lista os arquivos |
+| ls | Lista os arquivos na pasta |
 | ls -l | Lista os arquivos no formato lista |
 | ls -a | Lista os arquivos incluindo os ocultos |
 | ls -lh | Lista os arquivos com detalhes legíveis |
 | ls -R | Lista os arquivos recursivamente |
 | sudo [comando] | Executa um comando com privilégios de seguração do superusuário (Super User DO) |
-| open [arquivo] | Abre o arquivo (simula o duplo clique) |
-| top | Exibe os processos ativos. Pressione `q`para sair |
-| nano [arquivo] | Abre o arquivo usando o editor nano |
-| vim [arquivo] | Abre o arquivo usando o editor vim |
+| open [arquivo] | Abre o arquivo (simula o duplo clique), como se você clica-se duas vezes nele |
+| top | Exibe os processos ativos. Pressione `q`para SAIR |
+| nano [arquivo] | Abre o arquivo usando o editor nano do Terminal |
+| vim [arquivo] | Abre o arquivo usando o editor vim do Terminal |
 | clear | Limpa a tela |
 | reset | Redefine a tela do terminal |
+| exit | Sair do Terminal |
+
+## MANIPULANDO ARQUIVOS
+
+| Atalho | Descrição |
+| ------ | ----------|
+| touch [arquivo] | Cria um novo arquivo |
+| pwd | Caminho completo para o diretório de trabalho |
+| ls -l | Lista completa do diretório pai |
+| cd ../../ | Move dois niveis acima |
+| cd . | Pasta atual |
+| cd .. | Voltar uma pasta |
+| cat | Concatenar as telas |
+| rm [arquivos] | Apaga arquivos, ex.: rm [arquivo] [arquivo] |
+| rm -i [arquivo] | Deletar com comfirmação |
+| rm -r [diretorio] | Apaga um diretório e seu conteúdo |
+| rm -f [arquivo] | Força o apagar sem confirmação |
+| cp [arquivo] [novo arquivo copiado] | Copiar arquivo |
+| cp [arquivo] [diretorio] | Copiar um arquivo para outro diretorio |
+| mv [arquivo] [novo nome] | Move/Renomeia, ex.: mv -v [arquivo] [diretorio] |
+
+## MANIPULANDO DIRETÓRIOS
+
+| Atalho | Descrição |
+| ------ | ----------|
+| mkdir [diretorio] | Cria uma nova pasta |
+| mkdir -p [diretorio]/[diretorio] | Cria uma pasta com uma sub-pasta |
+| rmdir [diretorio] | Remove pasta ( esse comando só funciona se a pasta estiver vazia ) |
+| rm -R [diretorio] | Remove a pasta com todos os arquivos dentro |
+
+
+
 
 ## COMANDOS DE ENCADEAMENTO
 
