@@ -25,8 +25,6 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 
 
 
-
-
 ## COMANDOS PRINCIPAIS ![Apple](https://img.shields.io/badge/Apple-macOS-999999?style=for-the-badge&logo=apple&logoColor=white)
 
 | Atalho | Descrição |
@@ -44,20 +42,21 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | Esc + Backspace | Remove a palavra que antecede a posição do cursor |
 | Tab | no teclado é usada como comando para acionar a autocompletação ou listar sugestões |
 
+
 ## COMANDOS PRINCIPAIS
 
 | Atalho | Descrição |
 | ----------- | ----------- |
 | cd | Vai ao diretório `home`|
 | cd [pasta] | Altera o diretório |
-| cd / | Vai ao diretório raiz (root |
+| cd / | Vai ao diretório raiz (root) |
 | cd - | Volta ao diretório anterior |
 | ls | Lista os arquivos na pasta |
 | ls -l | Lista os arquivos no formato lista |
 | ls -a | Lista os arquivos incluindo os ocultos |
 | ls -lh | Lista os arquivos com detalhes legíveis |
 | ls -R | Lista os arquivos recursivamente |
-| sudo [comando] | Executa um comando com privilégios de seguração do superusuário (Super User DO) |
+| sudo [comando] | Executa um comando com privilégios de superusuário (ROOT) |
 | open [arquivo] | Abre o arquivo (simula o duplo clique), como se você clica-se duas vezes nele |
 | top | Exibe os processos ativos. Pressione `q`para SAIR |
 | nano [arquivo] | Abre o arquivo usando o editor nano do Terminal |
@@ -65,6 +64,7 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | clear | Limpa a tela |
 | reset | Redefine a tela do terminal |
 | exit | Sair do Terminal |
+
 
 ## MANIPULANDO ARQUIVOS
 
@@ -78,12 +78,13 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | cd .. | Voltar uma pasta |
 | cat | Concatenar as telas |
 | rm [arquivos] | Apaga arquivos, ex.: rm [arquivo] [arquivo] |
-| rm -i [arquivo] | Deletar com comfirmação |
+| rm -i [arquivo] | Deletar com confirmação |
 | rm -r [diretorio] | Apaga um diretório e seu conteúdo |
 | rm -f [arquivo] | Força o apagar sem confirmação |
 | cp [arquivo] [novo arquivo copiado] | Copiar arquivo |
-| cp [arquivo] [diretorio] | Copiar um arquivo para outro diretorio |
+| cp cp [arquivo_origem] [diretorio_destino] | Copiar um arquivo para outro diretorio. Ex: cp ./meu-arquivo.txt ./pasta/meu-arquivo.txt |
 | mv [arquivo] [novo nome] | Move/Renomeia, ex.: mv -v [arquivo] [diretorio] |
+
 
 ## MANIPULANDO DIRETÓRIOS
 
@@ -95,8 +96,6 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | rm -R [diretorio] | Remove a pasta com todos os arquivos dentro |
 
 
-
-
 ## COMANDOS DE ENCADEAMENTO
 
 | Atalho | Descrição |
@@ -106,11 +105,13 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | [comando-a] \|\| [comando-b] | Executa o comando B somente se A falhar |
 | [comando-a] & | Executa o comando A em segundo plano |
 
+
 ## COMANDOS DE TUBULAÇÃO
 
 | Atalho | Descrição |
 | ----------- | ----------- |
 | [comando-a] \| [comando-b] | Executa o comando A e depois passa o resultado para o comando B |
+
 
 ## COMANDOS DE HISTÓRICO
 
@@ -122,6 +123,7 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | ![value]:p | Imprime no console o último comando digitado que começa com `value`|
 | !! | Executa o último comando digitado |
 | !!:p | Imprime no console o último comando digitado |
+
 
 ## COMANDOS DE GERENCIAMENTO DE ARQUIVOS
 
@@ -145,6 +147,7 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | pbpaste | Cola o conteúdo da área de transferência |
 | pbpaste > [arquivo] | Cola o conteúdo da área de transferência no arquivo |
 
+
 ## COMANDOS DE GERENCIAMENTO DE DIRETÓRIO
 
 | Atalho | Descrição |
@@ -153,10 +156,11 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | mkdir -p [diretório]/[diretório] | Cria diretórios ordenados |
 | rmdir [diretório] | Remove diretório (opera apenas em diretórios vazios) |
 | rm -R [diretório] | Remove o diretório e seu conteúdo |
-| less [arquivo]| Entrega o resultado do arquivo de saída em blocos do tamanho da tela |
+| less [arquivo]| Entrega o resultado do arquivo de saída em blocos do tamanho da tela (Exibe o conteúdo de um arquivo página por página) |
 | [comando] > [arquivo] | Adiciona o resultado ao arquivo - lembre-se que ela será substituída |
 | [comando] >> [arquivo] | Anexa o resultado ao arquivo existente |
 | [comando] < [arquivo] | Avisa ao comando para ler o conteúdo de um arquivo |
+
 
 ## COMANDOS DE BUSCA
 
@@ -169,6 +173,7 @@ _As letras estão maiúsculas apenas com o intuito de facilitar a leitura. Caps 
 | grep -i [padrão-de-pesquisa] [arquivo] | Procura por todas as linhas que contêm o padrão sem diferenciar as letras maiúsculas das minúsculas |
 | mdfind [padrão-de-pesquisa] | Pesquisa `Spotlight` por arquivos (nomes, conteúdo e outros metadados) |
 | mdfind -onlyin [diretório] -name [padrão] | Pesquisa `Spotlight` por arquivos nomeados como o padrão no diretório especificado |
+
 
 ## COMANDOS DE AJUDA
 
